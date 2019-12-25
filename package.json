@@ -4,7 +4,7 @@
   "description": "Authentication application made with Node.js, Passport",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon app.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
