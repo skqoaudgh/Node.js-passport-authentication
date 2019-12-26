@@ -1,3 +1,3 @@
 module.exports = {
-    MongoURI: 'mongodb+srv://Cada:asd123@node-rest-shop-zqnku.mongodb.net/test?retryWrites=true&w=majority'
+    MongoURI: 'mongodb+srv://Cada:asd123@node-rest-shop-zqnku.mongodb.net/passportAuth?retryWrites=true&w=majority'
 }
