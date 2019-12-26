@@ -4,6 +4,8 @@ const mongoose = require('mongoose');
 const db = require('./config/keys').MongoURI;
 const flash = require('connect-flash');
 const session = require('express-session');
+const passport = require('passport');
+const passportConfig = require('./config/passport')(passport);
 
 const indexRouter = require('./routes/index');
 const UserRouter = require('./routes/users');
@@ -24,6 +26,8 @@ app.use(session({
     saveUninitialized: true
 }));
 app.use(flash());
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use((req, res, next) => {
     res.locals.success_msg = req.flash('success_msg');
